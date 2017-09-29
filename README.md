@@ -4,6 +4,7 @@ currency is a library to set amount in currency format
 xml code...
 
  <faiz.faizzylibtest.CurrencyTextView
+ 
         android:id="@+id/tv_currency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,6 +20,7 @@ xml code...
 Java code..
 
  tvCurrency= (CurrencyTextView) findViewById(R.id.tv_currency);
+ 
         tvCurrency.setText("15058901.0799962");
         tvCurrency.setFractionDigit(2);
         tvCurrency.setGrouping(true);
