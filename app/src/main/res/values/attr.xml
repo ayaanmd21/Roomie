@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CurrencyTextView">
+        <!--<attr name="decimal_place" format="integer" />-->
+        <attr name="grouping_currency" format="boolean" />
+        <attr name="countryName" format="string" />
+        <attr name="showCurrencySymbol" format="boolean" />
+    </declare-styleable>
+
+</resources>
