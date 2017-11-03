@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "24551796417",
+    "project_id": "roomie-e917e"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24551796417:android:93c14587c7593043",
+        "android_client_info": {
+          "package_name": "com.grexoft.roomie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24551796417-b3438a76orj5o3qffo3alf9c59no5f6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grexoft.roomie",
+            "certificate_hash": "0cccdd43e26b42a545301d5280d047e08d0cf192"
+          }
+        },
+        {
+          "client_id": "24551796417-nl558hci9902b83jol1590fr8eif18ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQp45NerWf2P1UPZIXb8xSnVsFprBVKus"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

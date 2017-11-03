@@ -1,0 +1,42 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+
+        <layer-list >
+            <item
+                >
+                <color android:color="@android:color/transparent"/>
+            </item>
+            <item android:top="4dp" android:bottom="4dp"
+                android:left="@dimen/margin_4dp" android:right="@dimen/margin_4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/text_color_grey"/>
+                    <stroke android:color="@color/text_color_grey" android:width="2dp" />
+                    <!--corners allow us to make the rounded corners button-->
+                    <corners android:radius="3dp" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+    <item android:state_pressed="false">
+
+        <layer-list >
+            <item>
+                <color android:color="@android:color/transparent"/>
+            </item>
+            <item android:top="4dp" android:bottom="4dp"
+                android:left="@dimen/margin_4dp" android:right="@dimen/margin_4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white"/>
+                    <stroke android:color="@color/text_color_grey_light" android:width="2dp" />
+                    <!--corners allow us to make the rounded corners button-->
+                    <corners android:radius="3dp" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>

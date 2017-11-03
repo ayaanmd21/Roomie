@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grexoft.roomie.ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_140dp"
+                android:background="@color/colorPrimary" />
+
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/circle" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_me"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:src="@drawable/circle_image_view"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_overlay="true"
+                app:civ_border_width="2dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/ic_photo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/civ_me"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_12dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_add_a_photo"
+                app:backgroundTint="@color/colorPrimary"
+                app:fabSize="normal"
+                tools:ignore="ContentDescription" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:src="@drawable/ic_done_white"
+                android:layout_marginTop="@dimen/margin_115dp"
+                tools:ignore="RelativeOverlap" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:src="@drawable/ic_arrow_white"
+                android:layout_marginTop="@dimen/margin_115dp"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_12dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user_24dp"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:drawableStart="@drawable/ic_user_24dp"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:textColor="@color/text_color_light_black"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/extra_large_text_style"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/gendar"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/male"
+                    app:buttonTint="@color/colorAccent" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female"
+                    app:buttonTint="@color/colorAccent" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/other"
+                    app:buttonTint="@color/colorAccent" />
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:hint="@string/user_id"
+                    android:inputType="text"
+                    android:longClickable="false"
+                    android:textColor="@color/text_color_light_black"
+                    android:textIsSelectable="false"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:drawableStart="@drawable/ic_phone_android_black_24dp"
+                    android:hint="@string/mobile_no"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@color/text_color_light_black"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location_grey_24dp"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:drawableStart="@drawable/ic_location_grey_24dp"
+                    android:hint="@string/address_hint"
+                    android:inputType="text"
+                    android:textColor="@color/text_color_light_black"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
